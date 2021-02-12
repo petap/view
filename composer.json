@@ -1,0 +1,33 @@
+{
+  "name": "petap/view",
+  "description": "Laminas Module.",
+  "type": "library",
+  "authors": [
+    {
+      "name": "Yura Shirokikh",
+      "email": "shirokikh.yura@gmail.com"
+    }
+  ],
+  "require": {
+    "php": "^7.4",
+    "laminas/laminas-eventmanager": "3.3.*",
+    "laminas/laminas-servicemanager": "3.6.*",
+    "laminas/laminas-modulemanager": "2.10.*",
+    "laminas/laminas-mvc": "3.2.*",
+    "laminas/laminas-http": "2.14.*",
+    "laminas/laminas-view": "2.12.*"
+  },
+  "require-dev" : {
+    "phpunit/phpunit": "^9.4"
+  },
+  "autoload": {
+    "psr-4": {
+      "Petap\\View\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Petap\\ViewTest\\": "tests/"
+    }
+  }
+}
